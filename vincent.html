@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entertainment Registration Form</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+    }
+
+    .form-container{
+      background:#fff;
+      width:100%;
+      max-width:600px;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .form-container h2{
+      text-align:center;
+      margin-bottom:25px;
+      color:#333;
+    }
+
+    .input-group{
+      margin-bottom:18px;
+    }
+
+    label{
+      display:block;
+      margin-bottom:6px;
+      font-weight:bold;
+      color:#444;
+    }
+
+    input,
+    select,
+    textarea{
+      width:100%;
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      font-size:15px;
+    }
+
+    textarea{
+      resize:none;
+    }
+
+    .row{
+      display:flex;
+      gap:15px;
+    }
+
+    .row .input-group{
+      flex:1;
+    }
+
+    button{
+      width:100%;
+      padding:14px;
+      background:#2575fc;
+      color:#fff;
+      border:none;
+      border-radius:8px;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:#0d5be1;
+    }
+
+    @media(max-width:600px){
+      .row{
+        flex-direction:column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Entertainment Registration Form</h2>
+
+    <form>
+      
+      <div class="row">
+        <div class="input-group">
+          <label>First Name</label>
+          <input type="text" placeholder="Enter first name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Enter last name" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="Enter email" required>
+        </div>
+
+        <div class="input-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="Enter phone number" required>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label>Entertainment Category</label>
+        <select required>
+          <option value="">Select Category</option>
+          <option>Music</option>
+          <option>Dance</option>
+          <option>Drama</option>
+          <option>Comedy</option>
+          <option>Fashion Show</option>
+          <option>Magic Show</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>Number of Participants</label>
+        <input type="number" placeholder="Enter number" required>
+      </div>
+
+      <div class="input-group">
+        <label>Event Date</label>
+        <input type="date" required>
+      </div>
+
+      <div class="input-group">
+        <label>Additional Information</label>
+        <textarea rows="4" placeholder="Write here..."></textarea>
+      </div>
+
+      <button type="submit">Register Now</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
